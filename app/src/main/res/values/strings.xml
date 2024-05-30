@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Сохранение Данных</string>
+
+    <string-array name="actionNames">
+        <item>Треугольник</item>
+        <item>Прямоугольник</item>
+        <item>Круг</item>
+    </string-array>
+
+</resources>

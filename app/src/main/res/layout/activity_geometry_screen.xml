@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".GeometryScreen">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="50dp">
+
+    <Spinner
+        android:layout_marginTop="20dp"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:entries="@array/actionNames">
+    </Spinner>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Выбрать"
+        android:onClick="spinnerhandler">
+
+    </Button>
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Число 1"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Число 2"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Число 3"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Вычислить"
+        android:onClick="calculate">
+
+    </Button>
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ответ"
+        android:textSize="25sp"
+        android:gravity="center">
+
+    </TextView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
